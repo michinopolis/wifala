@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Wífala! - Libros Virtuales</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #fff4e1;
+            color: #333;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #ff6f00;
+            color: #fff;
+            padding: 10px 20px;
+        }
+        header img {
+            height: 50px;
+            width: auto;
+        }
+        .header-content {
+            text-align: center;
+            flex-grow: 1;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            font-family: 'Comic Sans MS', cursive;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ff9800;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #ff6f00;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 80vh;
+            background-image: url('https://source.unsplash.com/random/1024x768?books');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 111, 0, 0.6);
+        }
+        .hero img {
+            z-index: 1;
+            height: 150px;
+            width: auto;
+            margin-bottom: 20px;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            z-index: 1;
+            font-family: 'Comic Sans MS', cursive;
+        }
+        .hero p {
+            font-size: 1.8rem;
+            margin-top: 10px;
+            z-index: 1;
+        }
+        .hero-content {
+            z-index: 1;
+        }
+        section {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #ffd54f;
+            color: #333;
+        }
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .feature {
+            flex: 1 1 300px;
+            margin: 10px;
+            padding: 20px;
+            background-color: #fff4e1;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .feature:hover {
+            transform: translateY(-10px);
+        }
+        .feature h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #ff6f00;
+        }
+        .feature p {
+            font-size: 1.2rem;
+        }
+        .discurso {
+            text-align: left;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff4e1;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .discurso h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ff6f00;
+        }
+        .discurso p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        footer {
+            background-color: #ff6f00;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 1rem;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="imagenes/logo.jpg">
+        <div class="header-content">
+            <h1>¡Wífala!</h1>
+        </div>
+    </header>
+    <nav>
+        <a href="index.html">Nuestros Libros</a>
+    </nav>
+    <div class="hero">
+        <div class="hero-content">
+            <img src="imagenes/logo.jpg">
+            <h1>Libros Virtuales para Todos</h1>
+            <p>Explora, Aprende, Crea con ¡Wífala!</p>
+        </div>
+    </div>
+    <section id="section2">
+        <h2>Sobre Nosotros</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>Misión</h3>
+                <p>Hacer accesible la lectura digital a cualquier persona, en cualquier lugar.</p>
+            </div>
+            <div class="feature">
+                <h3>Visión</h3>
+                <p>Ser la plataforma líder en distribución de libros electrónicos en toda América Latina.</p>
+            </div>
+            <div class="feature">
+                <h3>Valores</h3>
+                <p>Innovación, accesibilidad, y pasión por la lectura.</p>
+            </div>
+        </div>
+    </section>
+    <section id="discurso" class="discurso">
+        <h2>Estimados lectores apasionados</h2>
+        <p>Es un honor para mí estar aquí hoy, representando a una marca que no solo ha nacido del deseo de innovar, sino también de la convicción de que la lectura es una puerta abierta hacia infinitos mundos de conocimiento, inspiración y creatividad. ¡Wífala! es más que una simple plataforma de libros virtuales; es un movimiento que pretende democratizar el acceso al conocimiento en la era digital.</p>
+        <p>Todo comenzó con una visión clara, concebida por nuestro fundador, <strong>F.D. Anderson</strong>, quien en 2024, se propuso crear un espacio donde cualquier persona, sin importar su ubicación geográfica, condición socioeconómica o nivel educativo, pudiera acceder a una vasta biblioteca de libros virtuales. Anderson, un apasionado de la lectura y la tecnología, entendió que en un mundo cada vez más interconectado, la posibilidad de acceder a libros de manera digital no debía ser un privilegio, sino un derecho.</p>
+        <p><strong>¡Wífala!</strong>, cuyo nombre evoca los colores vibrantes y la diversidad cultural de la bandera andina, se presenta como un símbolo de inclusión y diversidad. Nuestra marca se erige sobre tres pilares fundamentales: <strong>accesibilidad, innovación y pasión por la lectura</strong>. Estos principios guían cada una de nuestras decisiones, cada una de nuestras iniciativas, y son el motor que impulsa nuestro crecimiento.</p>
+        <p><strong>Accesibilidad</strong> significa para nosotros que cualquier persona, en cualquier rincón del planeta, debe poder acceder a libros de alta calidad. Con esta misión en mente, hemos creado una plataforma que es intuitiva y fácil de usar, sin barreras tecnológicas que impidan a nuestros usuarios disfrutar de una buena lectura. Creemos firmemente que la educación y la cultura no deben estar limitadas por fronteras, y es por eso que ¡Wífala! ofrece una vasta colección de títulos en múltiples idiomas, cubriendo una amplia gama de géneros y disciplinas.</p>
+        <p>En cuanto a la <strong>innovación</strong>, en ¡Wífala! no solo buscamos seguir las tendencias, sino liderarlas. Sabemos que el mundo digital está en constante evolución, y por eso hemos adoptado las tecnologías más avanzadas para garantizar que nuestros usuarios tengan una experiencia única y enriquecedora. Desde la incorporación de inteligencia artificial para recomendaciones personalizadas hasta el uso de realidad aumentada para enriquecer la lectura, ¡Wífala! está a la vanguardia del futuro de la literatura digital.</p>
+        <p>Pero, sobre todo, lo que realmente nos distingue es nuestra <strong>pasión por la lectura</strong>. No somos simplemente una empresa tecnológica; somos un equipo de soñadores y visionarios que creen en el poder transformador de los libros. Creemos que cada libro es una oportunidad para cambiar vidas, para inspirar a nuevas generaciones, y para construir un futuro más informado y consciente. Esta pasión se refleja en cada aspecto de nuestra plataforma, desde la selección cuidadosa de títulos hasta las iniciativas que llevamos a cabo para fomentar la lectura entre los más jóvenes.</p>
+        <p>Desde nuestro lanzamiento en 2024, hemos experimentado un crecimiento notable, no solo en términos de números, sino en el impacto que hemos tenido en la vida de las personas. <strong>F.D. Anderson</strong>, con su liderazgo y visión, ha logrado construir una comunidad global de lectores que no solo consumen contenido, sino que también participan activamente en la creación y difusión del conocimiento.</p>
+        <p>Nuestro compromiso con la <strong>responsabilidad social</strong> también es un aspecto clave de nuestra identidad. En ¡Wífala!, creemos que tenemos un papel importante que desempeñar en la construcción de una sociedad más justa y equitativa. Por ello, parte de nuestras ganancias se destinan a programas de alfabetización y educación en comunidades desfavorecidas, garantizando que incluso aquellos con menos recursos puedan beneficiarse del acceso a la lectura digital.</p>
+        <p>Hemos recorrido un largo camino desde nuestra fundación, pero sabemos que esto es solo el comienzo. A medida que avanzamos, seguimos comprometidos con nuestra misión de llevar la lectura digital a todos los rincones del mundo. Y lo hacemos con la certeza de que cada página leída es un paso más hacia un futuro más brillante para todos.</p>
+        <p>Quiero aprovechar esta oportunidad para agradecer a todos los que han creído en nosotros desde el principio. A nuestros socios, que han confiado en nuestra visión; a nuestros colaboradores, que trabajan incansablemente para hacer realidad nuestros sueños; y, por supuesto, a nuestros usuarios, que son el corazón de ¡Wífala!.</p>
+        <p>Hoy, más que nunca, reafirmamos nuestro compromiso de seguir siendo una plataforma que inspira, educa y conecta a las personas a través de la lectura. En nombre de todo el equipo de ¡Wífala!, les agradezco por acompañarnos en este emocionante viaje. El futuro es brillante, y estamos emocionados de seguir escribiendo esta historia junto a ustedes.</p>
+        <p>Muchas gracias.</p>
+    </section>
+    <footer>
+        <p>© 2024 ¡Wífala! - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Wífala!</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #000000;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #ff6f00;
+            color: #fff;
+            padding: 10px 20px;
+        }
+        header img {
+            height: 50px;
+            width: auto;
+        }
+        .header-content {
+            text-align: center;
+            flex-grow: 1;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ff9800;
+        }
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #ff6f00;
+        }
+        .section-container {
+            display: flex;
+            height: 100vh;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+        }
+        .section-container > section {
+            flex: 0 0 100%;
+            scroll-snap-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        #section1 {
+            background-image: url('https://source.unsplash.com/random/1');
+        }
+        #section2 {
+            background-image: url('https://source.unsplash.com/random/2');
+        }
+        #section3 {
+            background-image: url('https://source.unsplash.com/random/3');
+        }
+        #section3 {
+            background-image: url('https://source.unsplash.com/random/4');
+        }
+        section h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        section p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+        footer {
+            background-color: #ff6f00;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="nosotros.html" title="marca ¡Wífala!">
+        <img src="imagenes/logo.jpg"></a>
+        <div class="header-content">
+            <h1>🤔¿Qué quieres leer hoy?📚</h1>
+        </div>
+    </header>
+    <nav>
+        <a href="#section1">Cuentos</a>
+        <a href="#section2">Novelas</a>
+        <a href="#section3">Historietas</a>
+    </nav>
+    <div class="section-container">
+        <section id="section1">
+            <div>
+                <a href="https://comunidadsm.com.pe/wp-content/uploads/Los-tres-chanchitos-1.pdf" title="los tres chanchitos">
+                    <img src="cuentos/cuento1.png" width="200"></a>
+                    <a href="https://www.argentina.gob.ar/sites/default/files/caperucita_roja_-_hermanos_grimm.pdf" title="caperucita roja">
+                    <img src="cuentos/cuento2.jpg" width="200"></a>
+                    <a href="https://www.argentina.gob.ar/sites/default/files/barba_azul_-_charles_perrault.pdf" title="barba azul">
+                    <img src="cuentos/cuento3.jpg" width="200"></a>
+                    <a href="https://www.argentina.gob.ar/sites/default/files/perrault_charles_-_el_gato_con_botas.pdf" title="el gato con botas">
+                    <img src="cuentos/cuento4.jpg" width="200"></a>
+                    <a href="https://www.grimmstories.com/es/grimm_cuentos/pdf/blancanieves.pdf" title="obra original de blancanieves">
+                    <img src="cuentos/cuento5.jpeg" width="200"></a>
+                    <a href="https://biblioteca.org.ar/libros/1733.pdf" title="el pozo y el péndulo">
+                    <img src="cuentos/cuento6.png" width="200"></a>
+                    <a href="file:///C:/Users/User/Downloads/WhatsApp%20Image%202024-08-19%20at%2008.49.08%20(1).pdf" title="kuya kuya">
+                    <img src="cuentos/cuento7.png" width="200"></a>
+                    <a href="https://biblioteca.org.ar/libros/157522.pdf" title="la reina de las nieves">
+                    <img src="cuentos/cuento8.jpg" width="200"></a>
+                    <a href="https://comunidadsm.com.pe/wp-content/uploads/El-Patito-Feo-1.pdf" title="el patito feo">
+                    <img src="cuentos/cuento9.png" width="200"></a>
+                    <a href="https://www.epedagogia.com.br/materialbibliotecaonine/1200El-rey-Midas.pdf" title="el toque de oro">
+                    <img src="cuentos/cuento10.jpg" width="200"></a>
+                    <a href="https://biblioteca.org.ar/libros/142437.pdf" title="el caballero carmelo">
+                    <img src="cuentos/cuento11.jpeg" width="200"></a>
+                    <a href="https://cuentosbonitos.weebly.com/mashenka-y-el-oso.html" title="la historia original de Masha y el Oso">
+                    <img src="cuentos/cuento12.jpeg" width="200"></a>
+            </div>
+        </section>
+        <section id="section2">
+            <div>
+                <a href="https://corazondeartista.wordpress.com/wp-content/uploads/2014/09/gaimanneil-coraline.pdf" title="libro original de coraline">
+                    <img src="novelas/novela1.jpg" width="200"></a>
+                    <a href="https://fecolsa.com.co/upload/Actividades%20Equilibrio%20Total/Rowling,%20J.%20K.%20-%20%20Harry%20Potter%20y%20la%20piedra%20filosofal.pdf" title="Harry Potter 1: la piedra filosofal">
+                    <img src="novelas/novela2.jpg" width="200"></a>
+                    <a href="https://www.suneo.mx/literatura/subidas/Fiodor%20Dostoyevski%20Crimen%20y%20castigo.pdf" title="crimen y castigo">
+                    <img src="novelas/novela3.jpeg" width="200"></a>
+                    <a href="https://web.seducoahuila.gob.mx/biblioweb/upload/Camus,%20Albert%20-%20La%20Peste.pdf" title="la peste">
+                    <img src="novelas/novela4.jpg" width="200"></a>
+                    <a href="https://www.ucm.es/data/cont/docs/119-2014-02-11-Kafka.La%20metamorfosis.pdf" title="la metamorfosis">
+                    <img src="novelas/novela5.jpeg" width="200"></a>
+                    <a href="https://www.suneo.mx/literatura/subidas/George%20Orwell%20Rebelión%20en%20la%20Granja.pdf" title="rebelion en la granja">
+                    <img src="novelas/novela6.jpeg" width="200"></a>
+                    <a href="https://biblioteca.org.ar/libros/133591.pdf" title="guerra y paz">
+                    <img src="novelas/novela7.jpeg" width="200"></a>
+                    <a href="https://www.secst.cl/upfiles/documentos/04042016_845pm_570326d2114b3.pdf" title="crepúsculo">
+                    <img src="novelas/novela8.jpeg" width="200"></a>
+                    <a href="http://www.cpte.gob.mx/desarrollo_educativo/pdf/pedagogia/libros_digitales/HARRY%20POTTER%20Y%20LA%20CAMARA%20SECRETA.pdf" title="Harry Potter 2:la camara secreta">
+                    <img src="novelas/novela9.jpeg" width="200"></a>
+                    <a href="https://tavapy.gov.py/biblioteca/wp-content/uploads/2022/03/RowlingJ-Harry-Potter-y-el-prisionero-de-Azkaban-III.pdf" title="Harry Potter 3: el prisionero de Azkaban">
+                    <img src="novelas/novela10.png" width="200"></a>
+                    <a href="https://web.seducoahuila.gob.mx/biblioweb/upload/Ray%20Bradbury%20-%20Fahrenheit%20451.pdf" title="farenheit 451">
+                    <img src="novelas/novela11.png" width="200"></a>
+                    <a href="https://biblioteca.agustinos.pe/opac_css/doc_num.php?explnum_id=1039" title="Harry Potter 4: el caliz de fuego">
+                    <img src="novelas/novela12.jpeg" width="200"></a>
+            </div>
+        </section>
+        <section id="section3">
+            <div>
+                <a href="file:///C:/Users/User/Downloads/Dise%C3%B1o%20sin%20t%C3%ADtulo.pdf" title="carlitos y snoopy">
+                    <img src="historietas/historieta1.jpg" width="300"></a>
+                    <a href="file:///C:/Users/User/Downloads/condorito.pdf" title="condorito">
+                    <img src="historietas/historieta2.jpg" width="300"></a>
+                    <a href="file:///C:/Users/User/Downloads/gaturro.pdf" title="gaturro">
+                    <img src="historietas/historieta3.jpeg" width="200"></a>
+                    <a href="file:///C:/Users/User/Downloads/deaguiluchos.pdf" title="aguiluchos">
+                    <img src="historietas/historieta4.jpeg" width="300"></a>
+                    <a href="https://hectorucsar.wordpress.com/wp-content/uploads/2014/08/mafalda-01.pdf" title="Mafalda">
+                    <img src="historietas/historieta5.jpg" width="300"></a>
+                    <a href="https://www.edicioneskraken.com/anticipos/9788416086870_GARFIELDODIOLOSLUNES.pdf" title="Garfield">
+                    <img src="historietas/historieta6.jpeg" width="300"></a>
+                    <a href="https://cinedemedianoche.wordpress.com/wp-content/uploads/2017/05/cinedemedianoche4.pdf" title="los pitufos">
+                    <img src="historietas/historieta7.jpg" width="300"></a>
+                    <a href="https://mortadeloyfilemonencomic.wordpress.com/wp-content/uploads/2012/08/mortadelo-y-filemon-un-porrazo-en-cada-esquina.pdf" title="Mortadelo y Filemon">
+                    <img src="historietas/historieta8.jpeg" width="300"></a>
+            </div>
+            <section id="section4">
+                <div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 ¡Wífala!. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
